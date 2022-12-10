@@ -10,11 +10,21 @@ import AppKit
 final class SettingsViewModel: ObservableObject {
     @Published var urlString: String = ""
 
+    let appStorageClient: AppStorageClient
+
+    init(appStorageClient: AppStorageClient = AppStorageClient.shared) {
+        self.appStorageClient = appStorageClient
+    }
+
     func cancel() {
         closeWindow()
     }
 
     func connect() {
+        Task {
+            await appStorageClient.setURLString(urlString)
+        }
+
         closeWindow()
     }
 
