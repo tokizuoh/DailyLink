@@ -7,7 +7,9 @@
 
 import AppKit
 
-final class SettingsViewModel {
+final class SettingsViewModel: ObservableObject {
+    @Published var urlString: String = ""
+
     func cancel() {
         closeWindow()
     }

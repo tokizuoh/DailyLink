@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct SettingsView: View {
-    private let viewModel = SettingsViewModel()
+    @ObservedObject var viewModel = SettingsViewModel()
     @State private var connectButtonDisabled = true
-    @State private var urlString: String = ""
 
     var body: some View {
         VStack(alignment: .leading) {
             Form {
-                TextField("URL:", text: $urlString)
+                TextField("URL:", text: $viewModel.urlString)
             }
-            .onChange(of: urlString) { newValue in
+            .onChange(of: viewModel.urlString) { newValue in
                 connectButtonDisabled = URL(string: newValue) == nil
             }
             HStack {
