@@ -12,9 +12,7 @@ struct AppMenuView: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            Button {
-                // TODO: Open
-            } label: {
+            Button(action: viewModel.open) {
                 Label("Open", systemImage: "arrow.up.right")
             }
             Divider()
