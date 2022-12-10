@@ -20,7 +20,7 @@ struct AppMenuView: View {
             Divider()
 
             Button {
-                viewModel.moveSettings()
+                viewModel.openSettings()
             } label: {
                 Text("Settings")
             }

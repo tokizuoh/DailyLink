@@ -12,7 +12,7 @@ final class AppMenuViewModel {
         NSApp.terminate(self)
     }
 
-    func moveSettings() {
+    func openSettings() {
         NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
         NSApp.activate(ignoringOtherApps: true)
     }
