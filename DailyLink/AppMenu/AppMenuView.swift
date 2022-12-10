@@ -34,12 +34,6 @@ struct AppMenuView: View {
     }
 }
 
-final class AppMenuViewModel {
-    func quit() {
-        NSApp.terminate(self)
-    }
-}
-
 #if DEBUG
 struct AppMenuView_Previews: PreviewProvider {
     static var previews: some View {
