@@ -22,7 +22,7 @@ struct AppMenuView: View {
             Button {
                 viewModel.openSettings()
             } label: {
-                Text("Settings")
+                Text("Settings...")
             }
             Button {
                 viewModel.quit()
