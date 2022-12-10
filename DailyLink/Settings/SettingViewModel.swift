@@ -14,6 +14,10 @@ final class SettingsViewModel: ObservableObject {
 
     init(appStorageClient: AppStorageClient = AppStorageClient.shared) {
         self.appStorageClient = appStorageClient
+
+        Task {
+            await urlString = appStorageClient.getURLString() ?? ""
+        }
     }
 
     func cancel() {
