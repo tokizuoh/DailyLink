@@ -14,6 +14,10 @@ final class AppMenuViewModel {
         self.appStorageClient = appStorageClient
     }
 
+    func onAppear() {
+        // TODO: AppStorageの日付と比較して必要があればアプリを終了させる
+    }
+
     func open() {
         Task {
             guard let urlString = await appStorageClient.getURLString(),
