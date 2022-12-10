@@ -10,8 +10,9 @@ import SwiftUI
 @main
 struct DailyLinkApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        MenuBarExtra("Utility App", systemImage: "star.fill") {
+            Text("Hoge")
         }
+        .menuBarExtraStyle(.menu)
     }
 }
