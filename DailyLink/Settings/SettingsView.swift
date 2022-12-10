@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
+    private let viewModel = SettingsViewModel()
     @State private var connectButtonDisabled = true
     @State private var urlString: String = ""
 
@@ -21,10 +22,10 @@ struct SettingsView: View {
             }
             HStack {
                 Spacer()
-                Button(action: {}) {
+                Button(action: viewModel.cancel) {
                     Text("Cancel")
                 }
-                Button(action: {}) {
+                Button(action: viewModel.connect) {
                     Text("Connect")
                 }
                 .disabled(connectButtonDisabled)

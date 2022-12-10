@@ -14,6 +14,7 @@
 		738FD80229445C160075B7F6 /* AppMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738FD80129445C160075B7F6 /* AppMenuView.swift */; };
 		738FD806294460650075B7F6 /* AppMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738FD805294460650075B7F6 /* AppMenuViewModel.swift */; };
 		738FD809294460D60075B7F6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738FD808294460D60075B7F6 /* SettingsView.swift */; };
+		738FD80B294469DE0075B7F6 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738FD80A294469DE0075B7F6 /* SettingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		738FD80129445C160075B7F6 /* AppMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenuView.swift; sourceTree = "<group>"; };
 		738FD805294460650075B7F6 /* AppMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenuViewModel.swift; sourceTree = "<group>"; };
 		738FD808294460D60075B7F6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		738FD80A294469DE0075B7F6 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				738FD808294460D60075B7F6 /* SettingsView.swift */,
+				738FD80A294469DE0075B7F6 /* SettingViewModel.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				738FD809294460D60075B7F6 /* SettingsView.swift in Sources */,
+				738FD80B294469DE0075B7F6 /* SettingViewModel.swift in Sources */,
 				738FD7F4294440820075B7F6 /* ContentView.swift in Sources */,
 				738FD80229445C160075B7F6 /* AppMenuView.swift in Sources */,
 				738FD7F2294440820075B7F6 /* DailyLinkApp.swift in Sources */,
