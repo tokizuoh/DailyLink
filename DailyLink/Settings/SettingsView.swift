@@ -35,11 +35,9 @@ struct SettingsView: View {
 }
 
 #if DEBUG
-// swiftlint:disable type_name
 struct SettingsView_Preview: PreviewProvider {
     static var previews: some View {
         SettingsView()
     }
 }
-// swiftlint:enable type_name
 #endif
