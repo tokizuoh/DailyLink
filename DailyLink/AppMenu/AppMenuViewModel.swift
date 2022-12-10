@@ -8,10 +8,6 @@
 import AppKit
 
 final class AppMenuViewModel {
-    func quit() {
-        NSApp.terminate(self)
-    }
-
     func openSettings() {
         NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
         NSApp.activate(ignoringOtherApps: true)
