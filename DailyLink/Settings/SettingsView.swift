@@ -14,7 +14,7 @@ struct SettingsView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Form {
-                TextField("URL:", text: $viewModel.urlString)
+                TextField("URL", text: $viewModel.urlString)
             }
             .onChange(of: viewModel.urlString) { newValue in
                 connectButtonDisabled = URL(string: newValue) == nil
