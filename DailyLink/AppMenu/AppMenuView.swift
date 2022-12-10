@@ -17,14 +17,10 @@ struct AppMenuView: View {
             }
             Divider()
 
-            Button {
-                viewModel.openSettings()
-            } label: {
+            Button(action: viewModel.openSettings) {
                 Text("Settings...")
             }
-            Button {
-                viewModel.quit()
-            } label: {
+            Button(action: viewModel.quit) {
                 Text("Quit DailyLink")
             }
 
