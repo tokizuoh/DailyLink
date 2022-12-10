@@ -11,7 +11,7 @@ import SwiftUI
 struct DailyLinkApp: App {
     var body: some Scene {
         MenuBarExtra("Utility App", systemImage: "star.fill") {
-            Text("Hoge")
+            AppMenuView()
         }
         .menuBarExtraStyle(.menu)
     }

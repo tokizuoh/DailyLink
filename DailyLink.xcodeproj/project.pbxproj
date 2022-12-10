@@ -11,6 +11,7 @@
 		738FD7F4294440820075B7F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738FD7F3294440820075B7F6 /* ContentView.swift */; };
 		738FD7F6294440830075B7F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 738FD7F5294440830075B7F6 /* Assets.xcassets */; };
 		738FD7F9294440830075B7F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 738FD7F8294440830075B7F6 /* Preview Assets.xcassets */; };
+		738FD80229445C160075B7F6 /* AppMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738FD80129445C160075B7F6 /* AppMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
