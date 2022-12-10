@@ -24,8 +24,8 @@ struct SettingsView: View {
                 Button(action: viewModel.cancel) {
                     Text("Cancel")
                 }
-                Button(action: viewModel.connect) {
-                    Text("Connect")
+                Button(action: viewModel.ok) {
+                    Text("OK")
                 }
                 .disabled(connectButtonDisabled)
             }

@@ -24,7 +24,7 @@ final class SettingsViewModel: ObservableObject {
         closeWindow()
     }
 
-    func connect() {
+    func ok() {
         Task {
             await appStorageClient.setURLString(urlString)
         }
