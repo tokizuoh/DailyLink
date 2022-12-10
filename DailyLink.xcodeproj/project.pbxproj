@@ -21,6 +21,7 @@
 		738FD7F5294440830075B7F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		738FD7F8294440830075B7F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		738FD7FA294440830075B7F6 /* DailyLink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyLink.entitlements; sourceTree = "<group>"; };
+		738FD80129445C160075B7F6 /* AppMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 				738FD7F5294440830075B7F6 /* Assets.xcassets */,
 				738FD7FA294440830075B7F6 /* DailyLink.entitlements */,
 				738FD7F7294440830075B7F6 /* Preview Content */,
+				738FD80129445C160075B7F6 /* AppMenuView.swift */,
 			);
 			path = DailyLink;
 			sourceTree = "<group>";
@@ -163,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				738FD7F4294440820075B7F6 /* ContentView.swift in Sources */,
+				738FD80229445C160075B7F6 /* AppMenuView.swift in Sources */,
 				738FD7F2294440820075B7F6 /* DailyLinkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

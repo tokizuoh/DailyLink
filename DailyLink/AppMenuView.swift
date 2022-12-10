@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct AppMenuView: View {
+    let viewModel = AppMenuViewModel()
+
     var body: some View {
         VStack(alignment: .leading) {
             Button {
@@ -23,12 +25,18 @@ struct AppMenuView: View {
                 Text("Settings")
             }
             Button {
-                NSApp.terminate(self)
+                viewModel.quit()
             } label: {
                 Text("Quit DailyLink")
             }
 
         }
+    }
+}
+
+final class AppMenuViewModel {
+    func quit() {
+        NSApp.terminate(self)
     }
 }
 
