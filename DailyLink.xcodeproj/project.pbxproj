@@ -13,6 +13,7 @@
 		738FD7F9294440830075B7F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 738FD7F8294440830075B7F6 /* Preview Assets.xcassets */; };
 		738FD80229445C160075B7F6 /* AppMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738FD80129445C160075B7F6 /* AppMenuView.swift */; };
 		738FD806294460650075B7F6 /* AppMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738FD805294460650075B7F6 /* AppMenuViewModel.swift */; };
+		738FD809294460D60075B7F6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738FD808294460D60075B7F6 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		738FD7FA294440830075B7F6 /* DailyLink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyLink.entitlements; sourceTree = "<group>"; };
 		738FD80129445C160075B7F6 /* AppMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenuView.swift; sourceTree = "<group>"; };
 		738FD805294460650075B7F6 /* AppMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenuViewModel.swift; sourceTree = "<group>"; };
+		738FD808294460D60075B7F6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		738FD7F0294440820075B7F6 /* DailyLink */ = {
 			isa = PBXGroup;
 			children = (
+				738FD807294460C80075B7F6 /* Settings */,
 				738FD8032944604A0075B7F6 /* AppMenu */,
 				738FD7F1294440820075B7F6 /* DailyLinkApp.swift */,
 				738FD7F3294440820075B7F6 /* ContentView.swift */,
@@ -81,6 +84,14 @@
 				738FD805294460650075B7F6 /* AppMenuViewModel.swift */,
 			);
 			path = AppMenu;
+			sourceTree = "<group>";
+		};
+		738FD807294460C80075B7F6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				738FD808294460D60075B7F6 /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				738FD809294460D60075B7F6 /* SettingsView.swift in Sources */,
 				738FD7F4294440820075B7F6 /* ContentView.swift in Sources */,
 				738FD80229445C160075B7F6 /* AppMenuView.swift in Sources */,
 				738FD7F2294440820075B7F6 /* DailyLinkApp.swift in Sources */,

@@ -14,5 +14,8 @@ struct DailyLinkApp: App {
             AppMenuView()
         }
         .menuBarExtraStyle(.menu)
+        Settings {
+            SettingsView()
+        }
     }
 }
