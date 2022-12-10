@@ -16,6 +16,9 @@ struct SettingsView: View {
             Form {
                 TextField("URL:", text: $urlString)
             }
+            .onChange(of: urlString) { newValue in
+                connectButtonDisabled = URL(string: newValue) == nil
+            }
             HStack {
                 Spacer()
                 Button(action: {}) {
