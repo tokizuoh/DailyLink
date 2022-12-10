@@ -12,4 +12,8 @@ final class AppMenuViewModel {
         NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
         NSApp.activate(ignoringOtherApps: true)
     }
+
+    func quit() {
+        NSApp.terminate(self)
+    }
 }
