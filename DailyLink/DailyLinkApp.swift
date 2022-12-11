@@ -14,7 +14,7 @@ struct DailyLinkApp: App {
     }
 
     var body: some Scene {
-        MenuBarExtra("Utility App", systemImage: "star.fill") {
+        MenuBarExtra("Utility App", systemImage: "eye.fill") {
             AppMenuView()
         }
         .menuBarExtraStyle(.menu)
