@@ -23,7 +23,6 @@ struct AppMenuView: View {
                 Text("Quit DailyLink")
             }
         }
-        .onAppear(perform: viewModel.onAppear)
     }
 }
 
