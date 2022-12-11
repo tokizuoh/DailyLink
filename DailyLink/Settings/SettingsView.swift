@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @ObservedObject var viewModel = SettingsViewModel()
-    @State private var connectButtonDisabled = true
+    @State private var okButtonDisabled = true
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -17,7 +17,7 @@ struct SettingsView: View {
                 TextField("URL", text: $viewModel.urlString)
             }
             .onChange(of: viewModel.urlString) { newValue in
-                connectButtonDisabled = URL(string: newValue) == nil
+                okButtonDisabled = URL(string: newValue) == nil
             }
             HStack {
                 Spacer()
@@ -27,7 +27,7 @@ struct SettingsView: View {
                 Button(action: viewModel.ok) {
                     Text("OK")
                 }
-                .disabled(connectButtonDisabled)
+                .disabled(okButtonDisabled)
             }
         }
         .padding(20)
