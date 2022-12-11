@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct DailyLinkApp: App {
+    init() {
+        quitAppIfNeeded()
+    }
+
     var body: some Scene {
         MenuBarExtra("Utility App", systemImage: "star.fill") {
             AppMenuView()
@@ -16,6 +20,18 @@ struct DailyLinkApp: App {
         .menuBarExtraStyle(.menu)
         Settings {
             SettingsView()
+        }
+    }
+
+    private func quitAppIfNeeded() {
+        Task {
+            guard let lastOpenedAt = await AppStorageClient.shared.getLastOpenedAt() else {
+                return
+            }
+
+            if Calendar.current.isDate(Date(), inSameDayAs: lastOpenedAt) {
+                await NSApp.terminate(self)
+            }
         }
     }
 }
