@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @ObservedObject var viewModel = SettingsViewModel()
+    @ObservedObject private var viewModel = SettingsViewModel()
     @State private var okButtonDisabled = true
 
     var body: some View {

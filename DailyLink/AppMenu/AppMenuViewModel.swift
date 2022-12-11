@@ -8,7 +8,7 @@
 import AppKit
 
 final class AppMenuViewModel {
-    let appStorageClient: AppStorageClient
+    private let appStorageClient: AppStorageClient
 
     init(appStorageClient: AppStorageClient = AppStorageClient.shared) {
         self.appStorageClient = appStorageClient
